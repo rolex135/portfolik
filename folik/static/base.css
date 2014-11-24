@@ -1,0 +1,121 @@
+html, head, body, .menu-bar,.other-content,.page-wrap, .header{
+    background:url(/static/images/martin.jpg) no-repeat center center fixed;
+}
+html, head, body,.page-wrap{
+    color:black;
+}
+h1,h2,h3,h4,h5 {
+    color:white;
+    text-shadow: 2px 2px 2px RGB(41,168,224);
+}
+
+.body, html{
+    height:100%;
+    margin:0;
+    padding:0;
+}
+.menu-bar{
+    margin-top:-5px;
+    margin-bottom:-20px;
+}
+#menulist {
+    list-style-type:        none;
+    margin-top:0px;
+    margin-bottom:0px;
+    margin:                    0px;
+    padding:                0px;
+    font-size:0;
+}
+
+.menuitem{
+    background-color: RGB(41,168,224);
+    -moz-border-radius:30px;
+    border-radius:30px;
+    border:2px solid RGB(0,112,186);
+    display: inline-block;
+    padding: 5px 5px;
+    font-family:Coronetscript,cursive;
+    font-size:30px;
+    text-decoration:none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.menuitem:hover {
+    background-color:   RGB(0,112,186);
+}
+
+.menuitem a {
+    text-decoration:        none;
+    display: block;
+    color: RGB(255,255,255);
+        padding:                10px 20px 10px 20px;
+}
+img{
+    max-width:75%; 
+}
+* {
+  margin:0;
+}
+html, body {
+  height: 100%;
+}
+.other-content{
+    margin-bottom:-25px;
+}
+.page-wrap {
+    min-height: 100%;
+  /* equal to footer height */
+    margin-bottom: -25px;
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.footer-page, .page-wrap:after {
+  height: 25px; 
+}
+.footer-page {
+    color: orange;
+    text-align:center;
+}
+.row centered{
+    text-align:center;
+}
+.col-centered{
+    display:inline-block;
+    float:none;
+    text-align:center;
+    margin-right:-4px;
+}
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15{
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+@media (min-width: 768px) {
+.col-sm-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+    }
+}

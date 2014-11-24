@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="/static/base.css" rel="stylesheet" media="screen">
+    <title>Martini portfoolio</title>
+</head>
+
+<body>
+{% block content_info %}
+<div class="page-wrap">
+<nav class="navbar navbar-default role="navigation">
+    <div class="header text-center">
+            <a class="brand" href="{% url 'home' %}"><img src="/static/images/background.png"></a>
+    </div>    
+    <div class="menu-bar text-center">
+      <ul id="menulist">
+                        <li class="menuitem"><a href="{% url 'works' %}">Tehtud tööd</a></li>
+                        <li class="menuitem"><a href="{% url 'oskused' %}">Oskused</a></li>
+                        <li class="menuitem"><a href="{% url 'kontakt' %}">Kontakt</a></li>
+                    
+                    </ul>
+        </div>
+<div class="other-content text-center">
+</br>
+{% block content %}
+<h3>Kodulehtede valmistamine<h/3>
+<h4>Valmistan Teile ilusaid ja läbimõeldud kodulehti, loon illustratsioone ja kujundan firmaidentiteeti. Kõike seda pühendumusega ja kvaliteetselt!</h4>
+
+{% endblock %}
+</div>
+</nav>
+</div>
+<footer class="footer-page">
+<p>Copyrighted (c) in 2014</p>
+</footer>
+{% endblock %}
+</body>
+
+</html>
+
